@@ -20,7 +20,7 @@ public class MsgConsumer {
      * @return: void
      * @date: 2021/10/14 15:24
      */
-    @KafkaListener(topics = {"topic-1","flight-events"})
+    @KafkaListener(topics = {"topic_user_log","topic_sql_log"})
     public void processMessage(String content) {
 
         System.out.println("消息被消费"+content);
